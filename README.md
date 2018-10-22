@@ -17,3 +17,6 @@ Is teh scripts than glue all together. It updates the DB with new data.
 
 #### runSoapQuery.sh 
 Is used to run a soap request to the endpoint to run a remote command
+
+#### runQuery_v1.xml
+soap envelope to process the command.
