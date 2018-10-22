@@ -19,4 +19,4 @@ Is teh scripts than glue all together. It updates the DB with new data.
 Is used to run a soap request to the endpoint to run a remote command
 
 #### runQuery_v1.xml
-soap envelope to process the command.
+soap envelope to process the command. 
