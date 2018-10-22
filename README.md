@@ -6,8 +6,10 @@ This project uses firebase, firebase-import, npm, tools to convert form json to 
 
 This projects is created per the necessity of real time monitoring of certain data that if is missing coudl cause problems for end users.
 
-process.js will run the command update_cycle.sh every 3 minutes. 
+#### process.js will run the command update_cycle.sh every 3 minutes. 
 
-csv2json.js will convert a json file to a csv file
+#### csv2json.js will convert a json file to a csv file
 
-update_cycle.sh is teh scripts than glue all together. It updates the DB with new data.
+#### update_cycle.sh is teh scripts than glue all together. It updates the DB with new data.
+
+#### runSoapQuery.sh is used to run a soap request to the endpoint to run a remote command
