@@ -1,0 +1,24 @@
+<soap:Envelope xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd' xmlns:wsa='http://schemas.xmlsoap.org/ws/2004/08/addressing'>
+   <soap:Header>
+    <wsse:Security soap:mustUnderstand='1' xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+         <wsse:UsernameToken wsu:Id='UsernameToken' xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+            <wsse:Username>${user}</wsse:Username>
+            <wsse:Password Type='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText'>${password}</wsse:Password>
+            <wsse:Nonce EncodingType='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary'>1234567890</wsse:Nonce>
+            <wsu:Created>2019-09-02T15:15:52.741Z</wsu:Created>
+        </wsse:UsernameToken>
+    </wsse:Security>
+   </soap:Header>
+        <soap:Body>
+          <PerformRequestMsg xmlns="http://exacttarget.com/wsdl/partnerAPI">
+           <Action>Start</Action>
+           <Definitions>
+            <ns1:Definition xmlns:ns1="http://exacttarget.com/wsdl/partnerAPI" xsi:type="ns1:QueryDefinition">
+             <ns1:PartnerKey xsi:nil="true"/>
+             <ns1:ModifiedDate xsi:nil="true"/>
+             <ns1:ObjectID>ObjectId</ns1:ObjectID>
+            </ns1:Definition>
+           </Definitions>
+          </PerformRequestMsg>
+        </soap:Body>
+</soap:Envelope>
