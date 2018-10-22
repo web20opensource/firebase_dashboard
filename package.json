@@ -1,0 +1,20 @@
+{
+  "name": "prod_email_dashboard_live",
+  "version": "1.0.0",
+  "description": "live dashboard to try detect failures in transactions",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario Ruiz , web2.0opensource@gmail.com",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "firebase-import": "^2.1.0",
+    "node-cron": "^1.2.1",
+    "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "cron": "^1.4.1"
+  }
+}
