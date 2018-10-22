@@ -34,7 +34,7 @@ sleep 180
 #php genResumeSent.php PROD
 #cd ..
 
-ssh dmnanlx7105 "./prod_dashboard/update_cycle_php_part.sh"
+ssh server "./prod_dashboard/update_cycle_php_part.sh"
 
 #create a timestamp
 timestamp=$(($(date +%s)))
